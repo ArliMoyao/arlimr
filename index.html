@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="style.css"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+<style> 
+
+
+.themeFont{ 
+        font-weight: 350; 
+        font:sans;
+    }
+    
+.mark-style1 {
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 225, 0, 0.1),
+    rgba(255, 225, 0, 0.7) 4%,
+    rgba(255, 225, 0, 0.3)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.mark-style2 {
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(222, 22, 252, 0.1),
+    rgba(220, 129, 226, 0.7) 4%,
+    rgba(255, 0, 208, 0.3)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.headline {
+  font-weight: 350;
+  font: sans;
+  font-size: larger;
+}
+
+
+</style>
+<body style="background-color: bisque;"> 
+
+<header> 
+
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" style="font:sans-serif; font-weight: 300; padding-left: 75px;" href="#">ARLI MOYAO-RAMIREZ</a>
+          </div>
+
+          <div class="navbar-header">
+            <a class="navbar-brand" style="font:sans-serif; font-weight: 350; padding-left: 75px;" href="about.html">About</a>
+            <a class="navbar-brand" style="font:sans-serif; font-weight: 350; padding-left: 75px;" href="index.html">Work</a>
+     
+
+        </div>   
+        </div>
+      </nav>
+
+</header>
+
+<div style="font:sans-serif;" class="container-fluid">
+    <div style="padding-top: 150px" class="container text-center"></div>
+    <section>             
+     <a style="font-size: xx-large; font: sans-serif; font-weight: 200; padding-left: 75px;"> <mark-style1 style="font-size: 50px" class="mark-style1">Thinker.  Creator.  Programmer.  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFsAAABbCAYAAAAcNvmZAAAACXBIWXMAAAsTAAALEwEAmpwYAAAHVUlEQVR4nO2ce7BXUxTHv/qVR0oiKgmTppfHjEdCZcijhpDJUIQwmZpE5VmUxyR5ZWQ8QiTNaLwaYXogGRUyUimT6SERbpm6SVfFvcesmXVnzpxZe5+9z+Oec353f2bWP7/f2a/122fvtfZa+wc4HA6Hw+FwOOy5BcBiAG8BaBmhvMOQUQA8n8w2LeiwoyGA3wPKJulmWY/DgMsERZPMMynssGO2Qtkk51jW5dBwBIB9GmUv1BV22DFUo+haOc+yToeCTwyUTeagI4El5F8DZZP0jttYfWeooaJJlgHYL+sOF5n5Fsr22ER0RKApgD2Wyl4epSEHcKWlomvlIqc8e6YbKHafsIF+GqGtek0JwDYDZe8A8I7w+elZD6BI9DRcMv4EcL7w+StZD6BIPG6o7K1s7q0NfL4bwKFZD6Io/GCobDp2JUYL3w3LeAyFoL2F5fErl2kpbJTODDTgNgtl/+wrN9dtlPZ8ZKHsn3zlrhW+fzFC+/WGA3lzC26CmxTKXu8rezCAvwVrpVGG48k1vQWFTgDwrULZPxpEdC7OaCy55+mAomjTawtgkULZZLX4uUl4ZkZGY8k9awOKeps//1Ch7O8D5Y8E8F/gmb8AHJTBWHLNcZpg7psKZa8Q6lkiPNe/jseSe4YFFPSd77uXFMqWbOl7hedWAZgK4CkAkwA8CuAeFmp3AIA+AM4E0AlAKwD7I6fQjt+cJaqb/H5AQVf5vpusic4E6WJhOuqkGsAWAEsBzALwBIARAC7hfSQ2rdk2XQlgg08qAGz3SZVhh3fz89u4npXsfLzO5x+UUjaIz6B3+cqt5ZO/Wh5S1E9LhsS6hBSuExrTAgCP8ZtBnq8xLfiX9HIggwN9u0vxHFkpEpMy6jeZngckedKWtmwSHBFV4JdmlgRZJasz6j/1NZSvc6BoD8BIoW+DFM+SSaiiEVszA3kTHMOv/MsA5gD4ht/koKkYV2gjDuWLHCh6L4B2Qt8uVzz/HuLTAEAbDljcAOBhADN5Y6yIMAbahxLN0Yi7y29n2cIb53peElSutRSN8dhKSJsmAE4F8JXB2OiZxqYVj9Ic+kiyEcAdfCNgAM/ACwB0BXASz9LD2SSMcyB0hqL9N5A+xxi89eSl3h3FNj+ETTNThc/lNLE06aJoe1rK7fbnN1A19hpeco6K21Afi1n+B4ALke7s8gR5PsWj3mdCxryC1/lE16snDZMbaVe/nzecpGmuaJMUkjQnA1ijGSfN9OEBpyvxDiw2nOUL2RNN+k6NJwi50ElyvRC88C8ZM9iGTx1KGbiZox9hCv8NQK+E2/9HaGdiQnWT6feBZjxfAjgNGdCCN6Yag2VlXILLylahjQcTmEBDAFRq9qLBeUhF7s5Hl2GzfB7/QHHZKNQ9Nuamu0DR50qeKJRJmxsasm2+M0ThmwGcFbOtlUK9ZONHXZsrFR4sGQSHIce0ZgejJiTjdGSMNqQIDFkFtkzSnLN0QIHoqZiBnk+mmx5DBpgn1EUbtg1jFEvGFSgotLTcrtl0PD7ksTUPpdRgSswx5UThPiVZVp1RBrRkt79Gs9PTGYopr8UM5L5QH24pdOfgraRwOsJsZljPs0J5igdGTZPwB5TLihIHS3cICiM714SJQtkeFn2oyODEMFOGCwqjtAITxgplaR02ZX2gLEWmyppVgsLo8MqEEULZoy3anisEMcr233h6KdZt0xsCNwpl6VQSMd4Myg0sS+YolH1uxHuRZMbZ0E1omxKDyo72/NoGB1tj4RoHHZIqThWzsf8rBfecwnZlxRTFrF5uePyp+iedfex+m3qks2IsY4WgGQdEvQjn0UOE2wSq1GEKcIQxUBERLxtGa5TUQ/MDqdKEVbKHs1J15+fNeOkIlqXofVk4MxsUyqlUpDfQXxD9Yqlov8znlF8VH5fr7YR+GqW8Kmxgjyg2UlvZwok9Ercq3orC29yfG/5FXFuLgLKpVHMqWUmI0EiHY+NRYLpqFLHRF9e71DCIHFUWCUk0yxVB6tzeNgjjXY0CxvHAJhsEjpOQikAS0QOK565DAemgWXureRNcFkFpdH26L1s4VTGWlVM0V/3SSDJKlamaQe8MieKoFDUlEO3uqIhLhslnvKyoUuuuRoFopUio8SLKGk1kvsQR9qoIy4q0btc6SIWZ3dIhvxdBbFzxdppbwFGkEPcmmyqiMZ6lUED4BMu2G3CeuIl77xlkqGaeBRXGnTEHuYv/byTOa9yRf6y4Cs91ekPjiHdQPBaKpBybUF+SmOWr87x2R53V21kxaXB8iBcbJtcghzThPBDbwcysgysiJZ4IUSykdXn8c5gJEQ6K+tVxH6POctNUizqhjYWdWy04J3VJia9m28zyzXzHJheMT8A5qWs68W0CU4Xb5BSmynMhHd3LNwTydqJW4ruLJrM8jYtSiQcIlkZwTuqazga3d+9DjpiWgnOSl1lepbhPnyl9eUkZl8SN1wxn+ZKAov3/6ONIgbP5MCptH8DhcDgcDocD6fM/wLEelseRcFwAAAAASUVORK5CYII="></mark-style1>
+    
+    </a>
+
+    </section>
+    
+    </div>
+
+    <h1> 
+      <mark-style1></mark-style1>
+    </h1>
+    <section style="padding-top: 150px; padding-left: 90px; font-weight: 350; "> 
+
+        <p class="headline"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFPklEQVR4nO2Ya2xTZRjHn/97ek7X03XtLuzQ9TpgCigMEHDAkGVDRgTlEtGIflHwQpSbgkNEIEMSwwdJ/ABqhExjwmL8QvQDxrFuLR2jjG0gu1M2plzG1pWLoLLhzIudIVgYQmlX01/yfDnth/8v73ue87wvUYwYMcLJJAA/APACaAVwDMAOIppJ0QCAlhXTdOU1K9PaGHBp00zDgWfHyI44FTsJ4DARTaRBTDKA3/YtST1+aYuthwEXjq42tV/dauu7VGjrXZWdUM4YOoloDQ1SNgPoMerFw75N1qsLxsgOnZrVN641neUSvKpXprUFVmM7DSJUAD7XiKy5ZlXaKbNBrEqNF6o7Nlp/nfeIXMYYutc8keC6/KHtOpc4/b7Zr1WzBiJ6mwYBFgBlyVqhlgfjAbs3W3436UVPkiwcPbPBfHHfEqWOr4RGZCe2zUk8yEWa1prOBLbT2EiGXwSga+5o2XFxi62nf5vw8hda/siyqcvjVMzLtw0PXTgr0aURWYso4OfRilTBGHwAikMdKhPAl7xjAKgAsBfAR0T0EhFNIKI4IrID+E5SsdY9i4dU3xz81lqfq3cJDB1bZxvc/c8cryuNBTl65zcvptQCuBLK8CMBdD8zVHYUjVc8X49XPBszklwvpOlKR+okpySwEwB6GeBfNFZ28K1yp/D9VfKqUs9lLQbxkHOZ0tj/vHWduRPANSISQ5IewO55irbMP3t43621f4q5SWSsne/t2lXGG63xv1TXJuvVhX+/0D6tmtUr8cIRgYELbAtJ+IDA8e8nGxuDCSyzGxyjFOmfbXAvdWy1qT3QQluIaB1f8ZCFDwiccE81twcTeMNqKB2Xpnbdj0CyVuB7fktIQ98iUFaUqRwLJvBjlum4wHCua7P1yr2EL3oupYrPRkQkPUiBrbkpsiuYAC+LLLqz0zXl9yJgSxQriWg9PWAeFoCutjz7lWAC3jx7Z5zAmvMyNGV8trnb8Gc/sFwOtEvjgxbgq7AnN0V74Har0JqX3p2qFj28G3kLTB13I/DJvMRKAA4KE0MAnPt0bGrN7STO56dfe1qJLxEYzq+ZkeAcaDUmmtVOPuhRGJnOAN/eScFban+VZZkakiShig9xOxcm37ZDySJrIqJcCjPzBaCzeIJSdycJXjvGpLo1Amsy6sQqzwrjyZvDn9lgvsi/3kT0EEWAmQzo2jgisXIgic78YT3L7Yb9AsPZqTZ1+cG3jF4usCI7oRxAXzg60J3mo9rRCerKuhybbyARb579fN4QuUTF8AufRBmD/8nU+FIA9UTEIiURHxjiLswfqnO25Nr9A4n48odfd0wxN1dmW5q7Zg3v5S88EY2LlECmWkTjT7t1raNsgpsBl6cmyQfc04KPHcFqmFaqIKJXIpIeQOGMTLHkT4ehj9fSOZILwGkAPpNGdeSLTKW2ewCB6Sky/w68F4n8MoCOQzt1DTz86W/13QKDj7da/hsRvcbvfiTG2p9P07lKs0xeX/6/BezyjRVYHgmBN40pzMPDXysxXDcms2oAHwf5X07gJNfBDzx6UaizyaJnhFaqsMqiB0A7EenDHR68exQVyJVcYMF0yQnAPcAJCkSUTkRPEdFiIlrKz85ElEERIEdUoa2n1ND72TvyIb7vichE0QKA4qVzpdKaXbqTgSuQxymKUAD4G77SnZJEtBHRyxRlrHt0mOAcZRX41couijIAoPmxDMEVOIDHU5Qxi9/X8DtNIppM0QaAksAE+S5FIdN4+JBeOIUTAPsA1ERy9L1fFgUucWPEiBEjxv+DvwDIxteaoYR3kwAAAABJRU5ErkJggg=="
+            >
+            Currently a member of the Wellesley Credibility Lab<br>
+            
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFPklEQVR4nO2Ya2xTZRjHn/97ek7X03XtLuzQ9TpgCigMEHDAkGVDRgTlEtGIflHwQpSbgkNEIEMSwwdJ/ABqhExjwmL8QvQDxrFuLR2jjG0gu1M2plzG1pWLoLLhzIudIVgYQmlX01/yfDnth/8v73ue87wvUYwYMcLJJAA/APACaAVwDMAOIppJ0QCAlhXTdOU1K9PaGHBp00zDgWfHyI44FTsJ4DARTaRBTDKA3/YtST1+aYuthwEXjq42tV/dauu7VGjrXZWdUM4YOoloDQ1SNgPoMerFw75N1qsLxsgOnZrVN641neUSvKpXprUFVmM7DSJUAD7XiKy5ZlXaKbNBrEqNF6o7Nlp/nfeIXMYYutc8keC6/KHtOpc4/b7Zr1WzBiJ6mwYBFgBlyVqhlgfjAbs3W3436UVPkiwcPbPBfHHfEqWOr4RGZCe2zUk8yEWa1prOBLbT2EiGXwSga+5o2XFxi62nf5vw8hda/siyqcvjVMzLtw0PXTgr0aURWYso4OfRilTBGHwAikMdKhPAl7xjAKgAsBfAR0T0EhFNIKI4IrID+E5SsdY9i4dU3xz81lqfq3cJDB1bZxvc/c8cryuNBTl65zcvptQCuBLK8CMBdD8zVHYUjVc8X49XPBszklwvpOlKR+okpySwEwB6GeBfNFZ28K1yp/D9VfKqUs9lLQbxkHOZ0tj/vHWduRPANSISQ5IewO55irbMP3t43621f4q5SWSsne/t2lXGG63xv1TXJuvVhX+/0D6tmtUr8cIRgYELbAtJ+IDA8e8nGxuDCSyzGxyjFOmfbXAvdWy1qT3QQluIaB1f8ZCFDwiccE81twcTeMNqKB2Xpnbdj0CyVuB7fktIQ98iUFaUqRwLJvBjlum4wHCua7P1yr2EL3oupYrPRkQkPUiBrbkpsiuYAC+LLLqz0zXl9yJgSxQriWg9PWAeFoCutjz7lWAC3jx7Z5zAmvMyNGV8trnb8Gc/sFwOtEvjgxbgq7AnN0V74Har0JqX3p2qFj28G3kLTB13I/DJvMRKAA4KE0MAnPt0bGrN7STO56dfe1qJLxEYzq+ZkeAcaDUmmtVOPuhRGJnOAN/eScFban+VZZkakiShig9xOxcm37ZDySJrIqJcCjPzBaCzeIJSdycJXjvGpLo1Amsy6sQqzwrjyZvDn9lgvsi/3kT0EEWAmQzo2jgisXIgic78YT3L7Yb9AsPZqTZ1+cG3jF4usCI7oRxAXzg60J3mo9rRCerKuhybbyARb579fN4QuUTF8AufRBmD/8nU+FIA9UTEIiURHxjiLswfqnO25Nr9A4n48odfd0wxN1dmW5q7Zg3v5S88EY2LlECmWkTjT7t1raNsgpsBl6cmyQfc04KPHcFqmFaqIKJXIpIeQOGMTLHkT4ehj9fSOZILwGkAPpNGdeSLTKW2ewCB6Sky/w68F4n8MoCOQzt1DTz86W/13QKDj7da/hsRvcbvfiTG2p9P07lKs0xeX/6/BezyjRVYHgmBN40pzMPDXysxXDcms2oAHwf5X07gJNfBDzx6UaizyaJnhFaqsMqiB0A7EenDHR68exQVyJVcYMF0yQnAPcAJCkSUTkRPEdFiIlrKz85ElEERIEdUoa2n1ND72TvyIb7vichE0QKA4qVzpdKaXbqTgSuQxymKUAD4G77SnZJEtBHRyxRlrHt0mOAcZRX41couijIAoPmxDMEVOIDHU5Qxi9/X8DtNIppM0QaAksAE+S5FIdN4+JBeOIUTAPsA1ERy9L1fFgUucWPEiBEjxv+DvwDIxteaoYR3kwAAAABJRU5ErkJggg=="
+            >
+            Previously a full-stack intern at MIT Media Lab<br>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFPklEQVR4nO2Ya2xTZRjHn/97ek7X03XtLuzQ9TpgCigMEHDAkGVDRgTlEtGIflHwQpSbgkNEIEMSwwdJ/ABqhExjwmL8QvQDxrFuLR2jjG0gu1M2plzG1pWLoLLhzIudIVgYQmlX01/yfDnth/8v73ue87wvUYwYMcLJJAA/APACaAVwDMAOIppJ0QCAlhXTdOU1K9PaGHBp00zDgWfHyI44FTsJ4DARTaRBTDKA3/YtST1+aYuthwEXjq42tV/dauu7VGjrXZWdUM4YOoloDQ1SNgPoMerFw75N1qsLxsgOnZrVN641neUSvKpXprUFVmM7DSJUAD7XiKy5ZlXaKbNBrEqNF6o7Nlp/nfeIXMYYutc8keC6/KHtOpc4/b7Zr1WzBiJ6mwYBFgBlyVqhlgfjAbs3W3436UVPkiwcPbPBfHHfEqWOr4RGZCe2zUk8yEWa1prOBLbT2EiGXwSga+5o2XFxi62nf5vw8hda/siyqcvjVMzLtw0PXTgr0aURWYso4OfRilTBGHwAikMdKhPAl7xjAKgAsBfAR0T0EhFNIKI4IrID+E5SsdY9i4dU3xz81lqfq3cJDB1bZxvc/c8cryuNBTl65zcvptQCuBLK8CMBdD8zVHYUjVc8X49XPBszklwvpOlKR+okpySwEwB6GeBfNFZ28K1yp/D9VfKqUs9lLQbxkHOZ0tj/vHWduRPANSISQ5IewO55irbMP3t43621f4q5SWSsne/t2lXGG63xv1TXJuvVhX+/0D6tmtUr8cIRgYELbAtJ+IDA8e8nGxuDCSyzGxyjFOmfbXAvdWy1qT3QQluIaB1f8ZCFDwiccE81twcTeMNqKB2Xpnbdj0CyVuB7fktIQ98iUFaUqRwLJvBjlum4wHCua7P1yr2EL3oupYrPRkQkPUiBrbkpsiuYAC+LLLqz0zXl9yJgSxQriWg9PWAeFoCutjz7lWAC3jx7Z5zAmvMyNGV8trnb8Gc/sFwOtEvjgxbgq7AnN0V74Har0JqX3p2qFj28G3kLTB13I/DJvMRKAA4KE0MAnPt0bGrN7STO56dfe1qJLxEYzq+ZkeAcaDUmmtVOPuhRGJnOAN/eScFban+VZZkakiShig9xOxcm37ZDySJrIqJcCjPzBaCzeIJSdycJXjvGpLo1Amsy6sQqzwrjyZvDn9lgvsi/3kT0EEWAmQzo2jgisXIgic78YT3L7Yb9AsPZqTZ1+cG3jF4usCI7oRxAXzg60J3mo9rRCerKuhybbyARb579fN4QuUTF8AufRBmD/8nU+FIA9UTEIiURHxjiLswfqnO25Nr9A4n48odfd0wxN1dmW5q7Zg3v5S88EY2LlECmWkTjT7t1raNsgpsBl6cmyQfc04KPHcFqmFaqIKJXIpIeQOGMTLHkT4ehj9fSOZILwGkAPpNGdeSLTKW2ewCB6Sky/w68F4n8MoCOQzt1DTz86W/13QKDj7da/hsRvcbvfiTG2p9P07lKs0xeX/6/BezyjRVYHgmBN40pzMPDXysxXDcms2oAHwf5X07gJNfBDzx6UaizyaJnhFaqsMqiB0A7EenDHR68exQVyJVcYMF0yQnAPcAJCkSUTkRPEdFiIlrKz85ElEERIEdUoa2n1ND72TvyIb7vichE0QKA4qVzpdKaXbqTgSuQxymKUAD4G77SnZJEtBHRyxRlrHt0mOAcZRX41couijIAoPmxDMEVOIDHU5Qxi9/X8DtNIppM0QaAksAE+S5FIdN4+JBeOIUTAPsA1ERy9L1fFgUucWPEiBEjxv+DvwDIxteaoYR3kwAAAABJRU5ErkJggg=="
+            >
+            Previously a SWE intern at Liberty Mutual Insurance</p>
+    </section>
+    <div class="container text-center" style="padding:150px">
+      
+<section> 
+
+      <div class="row" style="font-weight: 350; font: sans;">
+       
+        <div class="col-sm-6">
+          <div class="card">
+            <img src="pics/libertymutual.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mark-style2" style="width: 300px;"> Summer 2024 Internship</h5>
+              <p class="card-text">Worked with the Global Communications network team and built additional functionality to the current Telephony Data Warehouse that streamlines 
+                provisioning a user Dial Index Number. 
+
+
+              </p>
+              <a href="Summer2024Internship.html" class="btn btn-primary">Learn More!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img src="pics/mit-medialab.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mark-style2">Education & AI Website</h5>
+              <p class="card-text"> Durign my time at the MIT Media Lab, I worked on creating website that focuses on the AI Bill of Rights, and curriculum created for middle and high school students.</p>
+              <a href="Education-AIBIllOfRights.html" class="btn btn-primary">Learn more!</a>
+
+            </div>
+          </div>
+        </div>
+
+      </div> 
+
+
+
+      <div class="row" style="padding-top: 100px;"> 
+        <div class="col-sm-6">
+          <div class="card">
+            <img src="pics/bechdeltest.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mark-style2">Cinematic Connections</h5>
+              <p class="card-text"> Exploring gender imbalance in a set of 50 Hollywood movies through a series of quantitative tests (such as Bechdel Test) designed by women in the film industry. </p>
+              <a href="CS-DataStructures.html" class="btn btn-primary">Learn more!</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col-sm-6">
+          <div class="card">
+            <img src="pics/sustainibility.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title mark-style2"> Sustainbility App Proposal</h5>
+              <p class="card-text"> A way to get to address sustainibility on the Wellesley Campus -- how can students best learn about sustaibility, and promote sustainable habits on campus?  </p>
+              <a href="SustainibilityApp.html" class="btn btn-primary">Learn more!</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</div>
+</body>

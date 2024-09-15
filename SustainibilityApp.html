@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="style.css"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
+
+<style> 
+  /* Set black background color, white text and some padding */
+  footer {
+      background-color: bisque;
+      color: white;
+      padding: 15px;
+    }
+
+    .themeFont{ 
+        font-weight: 350; 
+        font:sans;
+    }
+
+    .mark-style1 {
+        margin: 0 -0.4em;
+        padding: 0.1em 0.4em;
+        border-radius: 0.8em 0.3em;
+        background: transparent;
+        background-image: linear-gradient(
+            to right,
+            rgba(255, 225, 0, 0.1),
+            rgba(255, 225, 0, 0.7) 4%,
+            rgba(255, 225, 0, 0.3)
+        );
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+}
+
+    .topic{
+        font-weight: 200;
+        font: sans; 
+    }
+</style>
+
+<body style="background-color: bisque;"> 
+
+    <header> 
+    
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" style="font:sans-serif; font-weight: 300; padding-left: 75px;" href="index.html">ARLI MOYAO-RAMIREZ</a>
+              </div>
+    
+              <div class="navbar-header">
+                <a class="navbar-brand" style="font:sans-serif; font-weight: 350; padding-left: 75px;" href="about.html">About</a>
+                <a class="navbar-brand" style="font:sans-serif; font-weight: 350; padding-left: 75px;" href="index.html">Work</a>
+                <a class="navbar-brand" style="font:sans-serif; font-weight: 350; padding-left: 75px;" href="#">More</a>
+    
+            </div>   
+            </div>
+          </nav>
+    
+    </header>
+    
+    <body> 
+    
+    <section> 
+        <div style="padding-left:200px; padding-top: 200px;">
+            
+    
+            <div class="col-sm-8 text-left themeFont"> 
+                <h1 class="themeFont mark-style1" style="font-weight: 200;">Sustaibility Application Proposal
+
+                  <img src="data:image/png;base64,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">
+                </h1>
+                <p>Throughout my Human-Computer Interaction course, I learned the importance of good and accessible design. Using the skills learn in this course, my final group project 
+                    that consisted of three other designers, created a Sustainibilty application. Together we design, implemented, and received feedback on the interactive 
+                    application built. To go along with this project, we created a website that can be accessed  <link rel="stylesheet" href=""> here </p>
+                <hr>
+                <h3 class="themeFont">Our Design Process</h3>
+                <p class="themeFont">We realized that many students at Wellesley would like to lead a more sustainable lifestyle, however face many practical barriers. For example, a more sustainable solution often is too time intensive or potentially more costly.
+                   We also realized many students did not know about the existing Wellesley sustainability resources. 
+                  Through the iterative human centered design process, we created Sage to bridge that gap. Sage's two key functionalities are the following:
+                <li>
+                  <ul> 
+                    Acting as place where Wellesley community members can buy and sell items in a streamlined process
+                  </ul>
+                </li>
+                <li>
+                  <ul> 
+                    Acting as a platform for sustainability related events on campus to increase community sustainability interest
+                  </ul>
+                  <ul>
+
+                  </ul>
+
+                </li>
+                
+                </p>
+              </div>
+              <div class="col-sm-8 sidenav">
+                <div class="well">
+                  <h4> Step 1: User Anaylsis</h4>
+                  <p>In this first step, we wanted to gather more information about the potential users for our application,
+                    and gather information on the current environmental habits of the Wellesley community. We conducted interviews and surveys to gather this information. </p>
+                  </p>
+
+                  <p> 
+                    <li> 
+                      <ul>
+                        We created a contexual interview protocol to learn about users feelinigs and experiences in relation to sustainbility on campus including an 
+                        observation section to understand how users naturally use similar applications. Some example questions were, "What is your perception of sustainability on Wellelsey's campus?",  "How frequently do you buy new items: clothes, shoes?, and "Currently, how do you remove items from your room or possession that you no longer want?". 
+                      </ul>
+                    </li>
+
+                    <li> 
+                      <ul> 
+                        We interviewed five users using the interview protocol, paying extra attention to the user's needs and pain points. 
+                      </ul>
+                    </li>
+
+                    <li> 
+                      <ul> 
+                        We creating two user personas based on the interviews and surveys.
+                      </ul>
+                    </li>
+
+                    <li> 
+                      <ul> 
+                        Based on the repeated pain points from our user personas and interview findings, we constructed a problem statement.
+                      </ul>
+                    </li>
+
+
+                    <li> 
+                      <ul> 
+                        Finally, we created a heirarchical task analysis diagram based on a single flow for buying an item with our application. We hoped that a flow designed in this way would minimize some of the aforementioned pain points.
+                      </ul>
+                    </li>
+
+                  </p>
+                </div>
+                <div class="well">
+                  <h4 style="padding-top: 50px;"> Step 2: Ideation</h4>
+
+                  <p> Once we identified the main uses for the application, we created two seperate designs with different functionalities that address our design goals. This step included:</p>
+                  <li> 
+                    <ul> 
+                      Creating two storyboards that represent realisitc user scenarios. Each scenario applied to a different design goal.  The storyboard below representings having a streamlined buying/selling experience to save time while living with sustainable methods (have quick options to see what is new, quickly make a purchase or sell, etc)
+                    </ul>
+                  </li>
+
+                  <img src="cs220pics/goal3.png" alt="Goal 3" style="width: 400px; height: 400px;">
+
+                  <li style="padding-top: 100px;"> 
+                    <ul> 
+                     Creating main design directions for each of the two designs.
+                    </ul>
+
+                  </li>
+           
+
+                  <li> 
+                    <ul> 
+                    Sharing our designs with the class and recieving feedback on the designs.
+                    </ul>
+                  </li>
+                
+                  <img src="cs220pics/design2.png" alt="Goal 1" style="width: 600px; height: 400px;">
+
+                  <img src="cs220pics/design3.png" alt="Goal 2" style="width: 600px; height: 400px;">
+
+                  
+                </div>
+              
+              
+                <div class="well">
+                  <h4 style="padding-top: 50px;"> Step 3: Wireframe Prototype</h4>
+
+                  <p>We created a wireframe prototype utilizing Figma that contained all the main features of our application, such as accessing events, or buying an item. In this step, we also conducted
+                    four user tests after our initial wireframe prototype, where one of the features "Event Host Controls" according to some of our user tests was difficult to 
+                  find due to the small font size, and inconvinient location in our app. This was only challenge many of the users felt needed fixing, but otherwise other aspects
+                of the wireframe design was easy to navigate through. </p>
+        
+                <img src="cs220pics/lowfi.png" alt="Goal 2" style="width: 600px; height: 400px;">
+
+                  
+                </div>
+
+
+                <div class="well">
+                  <h4 style="padding-top: 50px;"> Step 4: High Fidelity Prototype</h4>
+
+                  <p>In this next part of our prototype design, we focused on the useability and graphic design of our implementation. First, we added some new pages to increase the number of features of our app. Specifically, we built a “Create a New Event” page as well as improved the usability of our “Profile” page by allowing users to see their listings, likes, and sold items. We also recharted some of the flows in our wireframe prototype to ensure smooth and easy navigation. To improve our graphic design, we added colors, fonts, and a custom-designed logo to our app layout. </p>
+                  <img src="cs220pics/highfi.png" alt="Goal 2" style="width: 600px; height: 400px;">
+
+                  
+                </div>
+
+                <div class="well"></div>
+                  <h4 style="padding-top: 50px;"> Step 5: Final Prototype</h4>
+
+                  <p>Our final prototype was created after going through the iterative design process several times, keeping in mind human centered design principles.
+
+                  </p>
+        
+                  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/kG2FF5uuCRN7CnEjqiq4Jn/CS220?node-id=213-250&node-type=frame&scaling=scale-down&content-scaling=fixed&page-id=213%3A247&starting-point-node-id=213%3A826&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <footer class="container-fluid text-center">
+            
+          </footer>
+          
+          </body>
+    
+    </section>
+        </div>
+    </body>

@@ -1,0 +1,21 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+
+  body{ 
+    font:sans-serif; 
+    padding-left: 75px;
+  }
+
+  .card{
+    width: 20rem;
+  }
+
+  .pretty{ 
+
+    font:sans; 
+    font-weight:300
+  }
+
+ 
