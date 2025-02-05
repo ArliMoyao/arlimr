@@ -3,24 +3,32 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Arli's Website</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=star_rate" />
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=hotel_class" />
+<script src="https://kit.fontawesome.com/655e2492ad.js" crossorigin="anonymous"></script>
+<link rel="icon" href="favicon.png" type="favicon.png">
+
+</head>
+
   <body>
-    <script src="style.css"
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="./javascript/script.js"> </script>
 </body>
 </html>
 
+
 <style> 
   /* Set black background color, white text and some padding */
-  footer {
-      background-color: bisque;
-      color: white;
-      padding: 15px;
-    }
+  
 
     .themeFont{ 
         font-weight: 350; 
@@ -48,27 +56,28 @@
     }
 </style>
 
-<body style="background-color: bisque;"> 
+<body> 
 
-    <header> 
-    
-          <nav class="navbar navbar-inverse">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <a class="navbar-brand" style="font:sans-serif; font-weight: 300; padding-left: 75px;" href="index.html">ARLI MOYAO-RAMIREZ</a>
+  <header> 
+    <nav class="navbar navbar-inverse nav-padding">
+              <div class="container-fluid text-center">
+                <div class="navbar-header">
+                  <i class="fa-solid fa-star star-icon"></i>
+
+                  <a class="navbar-brand" style="font:sans-serif; font-weight: 300; padding-left: 75px; font-size: xx-large;" href="#"> ARLI MOYAO-RAMIREZ </a>
+                </div>
+
+                <div class="navbar-header">
+                  <a class="textmarker-effect navbar-brand " style="font:sans-serif; font-weight: 400; padding-left: 75px;" href="index.html">Work</a>
+                  <a class="navbar-brand textmarker-effect" style="font:sans-serif; font-weight: 400; padding-left: 75px;" href="about.html">About</a>
+                  <!-- <a class="navbar-brand textmarker-effect" style="font:sans-serif; font-weight: 400; padding-left: 75px;" href="#">Contact</a> -->
+          
+
+              </div>   
               </div>
-    
-              <div class="navbar-header">
-                <a class="navbar-brand" style="font:sans-serif; font-weight: 350; padding-left: 75px;" href="about.html">About</a>
-                <a class="navbar-brand" style="font:sans-serif; font-weight: 350; padding-left: 75px;" href="index.html">Work</a>
-                <a class="navbar-brand" style="font:sans-serif; font-weight: 350; padding-left: 75px;" href="#">More</a>
-    
-            </div>   
-            </div>
-          </nav>
-    
-    </header>
-    
+            </nav>
+
+</header>
     <body> 
     
     <section> 
@@ -81,7 +90,7 @@
                   <img src="data:image/png;base64,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">
                 </h1>
                 <p>Throughout my Human-Computer Interaction course, I learned the importance of good and accessible design. Using the skills learn in this course, my final group project 
-                    that consisted of three other designers, created a Sustainibilty application. Together we design, implemented, and received feedback on the interactive 
+                    that consisted of three other designers, created a Sustainabilty application. Together we design, implemented, and received feedback on the interactive 
                     application built. To go along with this project, we created a website that can be accessed  <link rel="stylesheet" href=""> here </p>
                 <hr>
                 <h3 class="themeFont">Our Design Process</h3>
