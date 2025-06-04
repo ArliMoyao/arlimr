@@ -3,193 +3,205 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Arli's Website</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>AI Bill of Rights Website | Arli Moyao-Ramirez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=star_rate" />
-<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=hotel_class" />
-<script src="https://kit.fontawesome.com/655e2492ad.js" crossorigin="anonymous"></script>
-<link rel="icon" href="favicon.png" type="favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=hotel_class" />
+    <script src="https://kit.fontawesome.com/655e2492ad.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.png" type="favicon.png">
+  </head>
 
-</head>
+  <style> 
+    .themeFont{ font-family: 'IBM Plex Mono', monospace; color: #410b48; font-size: 20px; }
+
+  </style>
 
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-<script src="./javascript/script.js"> </script>
-</body>
-</html>
-
-
-<style> 
-  /* Set black background color, white text and some padding */
-
-    .themeFont{ 
-        font-weight: 350; 
-        font:sans;
-    }
-
-    .mark-style1 {
-        margin: 0 -0.4em;
-        padding: 0.1em 0.4em;
-        border-radius: 0.8em 0.3em;
-        background: transparent;
-        background-image: linear-gradient(
-            to right,
-            rgba(255, 225, 0, 0.1),
-            rgba(255, 225, 0, 0.7) 4%,
-            rgba(255, 225, 0, 0.3)
-        );
-        -webkit-box-decoration-break: clone;
-        box-decoration-break: clone;
-}
-
-    .topic{
-        font-weight: 200;
-        font: sans; 
-    }
-</style>
-
-<body> 
-
-  <header> 
-    <nav class="navbar navbar-inverse nav-padding">
-              <div class="container-fluid text-center">
-                <div class="navbar-header">
-                  <i class="fa-solid fa-star star-icon"></i>
-
-                  <a class="navbar-brand" style="font:sans-serif; font-weight: 300; padding-left: 75px; font-size: xx-large;" href="#"> ARLI MOYAO-RAMIREZ </a>
-                </div>
-
-                <div class="navbar-header">
-                  <a class="textmarker-effect navbar-brand " style="font:sans-serif; font-weight: 400; padding-left: 75px;" href="index.html">Work</a>
-                  <a class="navbar-brand textmarker-effect" style="font:sans-serif; font-weight: 400; padding-left: 75px;" href="about.html">About</a>
-                  <!-- <a class="navbar-brand textmarker-effect" style="font:sans-serif; font-weight: 400; padding-left: 75px;" href="#">Contact</a> -->
+    <!-- Progress Bar -->
+    <div id="scroll-progress-bar" style="position: fixed; top: 0; left: 0; width: 0; height: 6px; background: #c24c2f; z-index: 9999; transition: width 0.2s;"></div>
+    <header>
+      <nav class="navbar navbar-inverse nav-padding">
+        <div class="container-fluid text-center">
+          <div class="navbar-header">
+            <i class="fa-solid fa-star star-icon"></i>
+            <a class="navbar-title" href="index.html">ARLI MOYAO-RAMIREZ</a>
+          </div>
+          <div class="navbar-header">
+            <a class="textmarker-effect navbar-brand" style="font:sans-serif; font-weight: 400; padding-left: 75px;" href="index.html">Work</a>
+            <a class="navbar-brand textmarker-effect" style="font:sans-serif; font-weight: 400; padding-left: 75px;" href="about.html">About</a>
+            <a class="navbar-brand textmarker-effect" style="font:sans-serif; font-weight: 400; padding-left: 75px;" href="#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section style="background-color: #ffffffef; padding: 20px;">
+      <div style="padding-left:200px; padding-top: 200px;">
+        
+          <!-- Project Info Section -->
+          <div class="scroll-animate" style="display: flex; gap: 32px; margin: 32px 0;">
           
-
-              </div>   
-              </div>
-            </nav>
-
-</header>
-    <body> 
-    
-    <section> 
-        <div style="padding-left:200px; padding-top: 200px;">
-    
-    
-            <div class="col-sm-8 text-left themeFont"> 
-                <h1 class="themeFont mark-style1" style="font-weight: 200;">Education and AI Website
-
-                  <img src="data:image/png;base64,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">
-                </h1>
-                <p style="padding-top:30px">Throughout my internship/research experience at the MIT Media Lab, I was interested in exploring the intersection of social justice and techhology. 
-                  Some research questions that lead to the creation of the AI Bill of Rights website was.. how can we make learning about the AI Bill Of Rights inclusive, accessible,
-                and engaging, and how can I use my knowledge on web development such as inclusive design, and accessible features to create an interactive learning experience? Overall, being the first real project I worked on outside of the classroom, this experience was invaluable in
-                helping me apply my skills in a practical setting and develop a deeper understanding of web development and design principles.   </p>
-                <hr>
-                <h3 class="themeFont">Goal</h3>
-                <ul class="themeFont">
-                  <li>Create an interactive website for students in middle/high school </li>
-                  <li>Create a back end feature that tracks users (students) roadmap through the interactive lesson plans</li>
-                  <li>Spend time efficiently designing website wireframes to carefully assess funtionalities needed through the creation of
-                    low and high-fidelity wireframes </li>
-
-                    
-                </ul>
-              </div>
-
-
-              <div class="col-sm-8 sidenav">
-                <div class="well">
-                  <h3 class="themeFont"> Stages of Creation</h3>
-                  
-                  
-                  <h4 class="themeFont" style="padding-top:30px"> Stage 1: Gathering Inspiration </h4>
-
-                  <p> I started by researching websites that were interactive and engaging for students and looked at involved educational learning.
-                    I came up with various components used in interactive learning like Khan Academy, IXL Learning, and w3Schools.  </p>
-                  
-                  <img src="aiwebsite-materials/designtool.png" class="card-img-top" style="width: 500px; height: 400px;" alt="...">
-                  <img src="aiwebsite-materials/design2.png" class="card-img-top" style="width: 500px; height: 400px;" alt="...">
-                  <img src="aiwebsite-materials/design3.png" class="card-img-top" style="width: 500px; height: 400px;" alt="...">
-                  <img src="aiwebsite-materials/dribble.png" class="card-img-top" style="width: 500px; height: 400px;" alt="...">
-                </div>
-          
-          
-
-                
-                <div class="well">
-                  <h4 class="themeFont" style="padding-top:30px"> Stage 2: Designing Wireframes </h4>
-                  <p> I created low-fidelity wireframes to get a sense of the layout and design of the website. I then created high-fidelity wireframes to get a sense of the color scheme, and the overall look of the website, and
-                    based the color scheme off of the MIT Day of AI curriculum color scheme. </p>
-                    <img src="aiwebsite-materials/wireframe-1.png" class="card-img-top" style="width: 400px; height: 400px;" alt="...">
-                    <img src="aiwebsite-materials/designsystem.png" class="card-img-top" style="width: 400px; height: 400px;" alt="...">
-                    <img src="aiwebsite-materials/highfidelity.png" class="card-img-top" style="width: 400px; height: 400px;" alt="...">
-
-                 </div>
-
-                  <div class="well">
-                    <h4 class="themeFont" style="padding-top:30px"> Stage 3: Building the Website </h4>
-                    <p> I used HTML, CSS, and Javascript to build the website. I used Figma to create the wireframes and then used the wireframes to build the website. I also used Firebase to create the back-end feature that would track students' progress through the lesson plans. </p>
-                      <img src="aiwebsite-materials/website1.gif" class="card-img-top" style="width: 400px; height: 400px;" alt="...">
-                      <img src="aiwebsite-materials/website2.gif" class="card-img-top" style="width: 400px; height: 400px;" alt="...">
-                      <img src="aiwebsite-materials/website3.gif" class="card-img-top" style="width: 400px; height: 400px;" alt="...">
-                      <img src="aiwebsite-materials/data-base.png" class="card-img-top" style="width: 400px; height: 400px;" alt="...">
-
-                    </div>
-  
-      
-  
-
-
-              <div class="col-sm-8 sidenav">
-                <div class="well">
-                  <h3 class="themeFont" style="padding-top: 50px;"> Value and Impact</h3>
-                  <p>
-
-                    The AI Bill of Rights website was created to provide a space for students to learn about the importance of AI ethics and how it impacts their daily lives. 
-                    It was designed to be interactive and engaging, with the goal of making learning about AI ethics fun and accessible. It includes a back-end feature that would ideally track students' progress through the lesson plans,
-                    allowing teachers to monitor their students' learning and provide feedback. The website serves as an added functionality to the Day 
-                    AI curriculum, and serves as a positive impact on students' understanding of AI ethics, and raise awareness of the importance of AI BIll of Rights.
-                  </p>
-                </div>  
-
-              </div>
-
-              <div class="col-sm-8 sidenav">
-                <div class="well">
-                  <h3 class="themeFont"> Technologies Used</h3>
-                  <p>Java, HTML, CSS, Git, Javascript Firebase, Figma. </p>
-                </div>
-
-
-            </div>
-
-            <div class="col-sm-8 sidenav">
-              <div class="well">
-                <h3 class="themeFont">Key Learnings</h3>
-                <p> During this project, I deepened my understanding of HTML and CSS, particularly in structuring layouts and styling elements. I also gained valuable insights into
-                   user experience (UX) design, learning how to create user-friendly interfaces and ensure easy navigation throughout a website. Through working with Firebase and JavaScript, 
-                   I enhanced my skills in collecting, saving, and managing information. This project also strengthened my ability to plan and organize effectively, from outlining the project
-                    scope to prototyping and refining the design through trial and error. Additionally, I improved my project management abilities by balancing various tasks, meeting deadlines,
-                     and setting personal goals to ensure consistent and responsive design. </p>
-                  </p>
-              </div>
 
           </div>
-          
-          <footer class="container-fluid text-center">
+
+          <div class="col-sm-8 text-left">
+          <h1 class="section-title-card-highlight scroll-animate">
+            EDUCATIONAL WEBSITE ON AI BILL OF RIGHTS
+              </h1>
+            <p style="font-size: 20px ;
+          font-weight: 700" class="scroll-animate" style="padding-top:30px">
+             How can I make learning about the AI Bill Of Rights inclusive, accessible, and engaging, and how can I use my knowledge on web development such as inclusive design, and accessible features to create an interactive learning experience? </p>
             
-          </footer>
-          
-          </body>
-    
-    </section>
+            <img src="/Users/arlimoyao/arli-websiteproject/aiwebsite-materials/website1.gif" alt="AI Bill of Rights Website" class="img-fluid" style="width: 800px; height: auto; border-radius: 12px; border: 4px solid #c24c2f; object-fit: cover;">
+         
+<div class="scroll-animate" style="display: flex; flex-direction: row; gap: 40px; margin: 32px 0;">
+  <div style="flex: 1; min-width: 220px; display: flex; flex-direction: column; gap: 24px;">
+    <div class="themeFont" style="font-size: 1.1rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(255,179,102,0.10); padding: 24px; text-align: center;">
+      <span style="display: block; font-weight: bold; color:#c24c2f; border-bottom: 2px solid #c24c2f; margin-bottom: 6px;">Role</span>
+      <span class="themeFont">UX/UI Designer, Web Developer, Researcher</span>
+    </div>
+    <div class="themeFont" style="font-size: 1.1rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(255,179,102,0.10); padding: 24px; text-align: center;">
+      <span style="display: block; font-weight: bold; color:#c24c2f; border-bottom: 2px solid #c24c2f; margin-bottom: 6px;">Team</span>
+      <span>Solo Project (MIT Media Lab)</span>
+    </div>
+   
+  </div>
+  <div style="flex: 1; min-width: 220px; display: flex; flex-direction: column; gap: 24px;">
+    <div class="themeFont" style="font-size: 1.1rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(255,179,102,0.10); padding: 24px; text-align: center;">
+      <span style="display: block; font-weight: bold; color:#c24c2f; border-bottom: 2px solid #c24c2f; margin-bottom: 6px;">Tools</span>
+      <span>HTML, CSS, JavaScript, Firebase, Figma</span>
+    </div>
+   <div class="themeFont" style="font-size: 1.1rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(255,179,102,0.10); padding: 24px; text-align: center;">
+      <span style="display: block; font-weight: bold; color:#c24c2f; border-bottom: 2px solid #c24c2f; margin-bottom: 6px;">Timeline</span>
+      <span >Summer 2023</span>
+    </div>
+  </div>
+</div>
+          <hr class="scroll-animate">
+
+
+            <h3 class="sub-title scroll-animate" style="color:#410b48;">INTRODUCTION</h3>
+          <h3 class="blurb-labels  scroll-animate" style="color: #c24c2f ;"> Learning about AI Policy and Software Development </h3>
+                <img src="download.png" style="color:#ffe100; font-size: 2.5rem; vertical-align: middle;">
+
+         
+         
+          <p style="font-size: 20px ;" class="scroll-animate" style="padding-top:30px">
+            Throughout my internship/research experience at the MIT Media Lab, I was interested in exploring the intersection of social justice and technology. 
+            Some research questions that led to the creation of the AI Bill of Rights website were: how can we make learning about the AI Bill Of Rights inclusive, accessible,
+            and engaging, and how can I use my knowledge on web development such as inclusive design, and accessible features to create an interactive learning experience? Overall, being the first real project I worked on outside of the classroom, this experience was invaluable in
+            helping me apply my skills in a practical setting and develop a deeper understanding of web development and design principles.
+          </p>
+
+          <h3 class="sub-title scroll-animate" style="color:#410b48;">PROJECT GOALS</h3>
+          <h3 class="blurb-labels  scroll-animate" style="color: #c24c2f ;"> Understanding Project Goals </h3>
+
+          <ul class="scroll-animate">
+            <li>Create an interactive website for students in middle/high school</li>
+            <li>Create a back end feature that tracks users (students) roadmap through the interactive lesson plans</li>
+            <li>Spend time efficiently designing website wireframes to carefully assess functionalities needed through the creation of low and high-fidelity wireframes</li>
+          </ul>
+         
+         
+          <h3 class="sub-title scroll-animate" style="color:#410b48;">DESIGN PROCESS AND INSPIRATION</h3>
+                <h3 class="blurb-labels  scroll-animate" style="color: #c24c2f ;"> Learning and gathering inspiration from different learning platforms </h3>
+
+          <div class="scroll-animate" style="display: flex; flex-wrap: wrap; gap: 32px; margin: 32px 0;">
+            <img src="aiwebsite-materials/designtool.png" alt="Design Tool" style="width: 600px; height: 320px; border-radius: 12px; border: 4px solid #c24c2f; object-fit: cover;">
+            <img src="aiwebsite-materials/design2.png" alt="Design 2" style="width: 600px; height: 320px; border-radius: 12px; border: 4px solid #c24c2f; object-fit: cover;">
+            <img src="aiwebsite-materials/design3.png" alt="Design 3" style="width: 600px; height: 320px; border-radius: 12px; border: 4px solid #c24c2f; object-fit: cover;">
+            <img src="aiwebsite-materials/dribble.png" alt="Dribble Inspiration" style="width: 600px; height: 320px; border-radius: 12px; border: 4px solid #c24c2f; object-fit: cover;">
+          </div>
+          <h3 class="sub-title scroll-animate" style="color:#410b48;">WIREFRAMES</h3>
+           <h3 class="blurb-labels  scroll-animate" style="color: #c24c2f ;">Designing low-fidelity wireframes </h3>
+
+          <div class="scroll-animate" style="display: flex; flex-wrap: wrap; gap: 32px; margin: 32px 0;">
+            <img src="aiwebsite-materials/wireframe-1.png" alt="Wireframe" style="width: 600px; height: 320px; border-radius: 12px; border: 4px solid #c24c2f; object-fit: cover;">
+            <img src="aiwebsite-materials/designsystem.png" alt="Design System" style="width: 600px; height: 320px; border-radius: 12px; border: 4px solid #c24c2f; object-fit: cover;">
+            <img src="aiwebsite-materials/highfidelity.png" alt="High Fidelity" style="width: 420px; height: 320px; border-radius: 12px; border: 4px solid #c24c2f; object-fit: cover;">
+          </div>
+          <h3 class="sub-title scroll-animate" style="color:#410b48;">PROTOTYPING AND IMPLEMENTATION</h3>
+            <h3 class="blurb-labels  scroll-animate" style="color: #c24c2f ;">Designing high-fidelity prototype and back </h3>
+
+          <div class="scroll-animate" style="display: flex; flex-wrap: wrap; gap: 32px; margin: 32px 0;">
+            <img src="aiwebsite-materials/website2.gif" alt="Website Demo 2" style="width: 600x; height: 400px; border-radius: 12px; border: 4px solid #c24c2f; object-fit: cover;">
+            <img src="aiwebsite-materials/website3.gif" alt="Website Demo 3" style="width: 600x; height: 400px; border-radius: 12px; border: 4px solid #c24c2f; object-fit: cover;">
+            <img src="aiwebsite-materials/data-base.png" alt="Database" style="width: 600px; height: 400x; border-radius: 12px; border: 4px solid #c24c2f; object-fit: cover;">
+          </div>
+         
+          </div>
+         <div class="well scroll-animate" style="background: #fff8e1; border-radius: 12px; box-shadow: 0 2px 10px rgba(255,179,102,0.10); padding: 24px; margin-bottom: 24px;">
+  <h3 class="sub-title" style="color:#c24c2f;">Value and Impact</h3>
+  <p style="font-size: 1.1rem;">
+    The AI Bill of Rights website was created to provide a space for students to learn about the importance of AI ethics and how it impacts their daily lives. 
+    It was designed to be interactive and engaging, with the goal of making learning about AI ethics fun and accessible. It includes a back-end feature that would ideally track students' progress through the lesson plans,
+    allowing teachers to monitor their students' learning and provide feedback. The website serves as an added functionality to the Day 
+    AI curriculum, and serves as a positive impact on students' understanding of AI ethics, and raise awareness of the importance of AI Bill of Rights.
+  </p>
+</div>
+
+<div class="well scroll-animate" style="background: #fff8e1; border-radius: 12px; box-shadow: 0 2px 10px rgba(255,179,102,0.10); padding: 24px;">
+  <h5  style="color: #c24c2f;">Key Learnings</h5>
+  <ul style="font-size: 1rem;">
+    <li>Deepened understanding of HTML/CSS for layout and styling</li>
+    <li>Gained insights into UX design and accessibility</li>
+    <li>Improved skills in Firebase and project management</li>
+    <li>Learned to balance tasks, meet deadlines, and iterate on design</li>
+  </ul>
+</div>
         </div>
-    </body>
+      </div>
+    </section>
+    <footer class="footer-cards" style="color: #410b48; padding: 20px; text-align: center;">
+      <div>
+        <h2 style="font-size:45px; font-family: sans-serif; font-weight: 300; color: #c24c2f;">
+          Be <span style="color: #ffe100;"><strong> Bold.</strong></span>
+        </h2>
+        <p class="ibm-plex-mono-light" style="color: #c24c2f;">
+          Designed and coded with 
+          <img src="https://img.icons8.com/material-rounded/24/like--v1.png" alt="like--v1"/>
+        </p>
+        <div class="ibm-plex-mono-light" style="font-size: smaller;">
+          <span>am118@wellesley.edu </span>
+          <a href="https://www.linkedin.com/in/arli-moyao-ramirez-171394174/">
+            <img style="color:#c24c2f" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/linkedin.png" alt="linkedin"/>
+          </a>
+          <a href="https://github.com/ArliMoyao">
+            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github"/>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Progress bar and header shadow
+      window.addEventListener('scroll', function() {
+        const scrollBar = document.getElementById('scroll-progress-bar');
+        const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        scrollBar.style.width = scrolled + "%";
+        // Header shadow
+        const header = document.querySelector('header');
+        if (window.scrollY > 10) {
+          header.style.boxShadow = "0 4px 16px rgba(64,11,72,0.10)";
+        } else {
+          header.style.boxShadow = "none";
+        }
+      });
+      // Scroll animation for text
+      document.addEventListener("DOMContentLoaded", function() {
+        const animatedEls = document.querySelectorAll('.scroll-animate');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        }, { threshold: 0.15 });
+        animatedEls.forEach(el => observer.observe(el));
+      });
+    </script>
+  </body>
+</html>

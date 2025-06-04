@@ -3,205 +3,373 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Arli's Website</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Wellesley Sustainability Proposal | Arli Moyao-Ramirez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=star_rate" />
-<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=hotel_class" />
-<script src="https://kit.fontawesome.com/655e2492ad.js" crossorigin="anonymous"></script>
-<link rel="icon" href="favicon.png" type="favicon.png">
-
-</head>
-
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-<script src="./javascript/script.js"> </script>
-</body>
-</html>
-
-
-<style> 
-  /* Set black background color, white text and some padding */
-  
-
-    .themeFont{ 
-        font-weight: 350; 
-        font:sans;
-    }
-
-    .mark-style1 {
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=hotel_class" />
+    <script src="https://kit.fontawesome.com/655e2492ad.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.png" type="favicon.png">
+    <style>
+      .themeFont{ font-family: 'IBM Plex Mono', monospace; color: #410b48; font-size: 20px; }
+      .mark-style1 {
         margin: 0 -0.4em;
         padding: 0.1em 0.4em;
         border-radius: 0.8em 0.3em;
         background: transparent;
         background-image: linear-gradient(
-            to right,
-            rgba(255, 225, 0, 0.1),
-            rgba(255, 225, 0, 0.7) 4%,
-            rgba(255, 225, 0, 0.3)
+          to right,
+          rgba(255, 225, 0, 0.1),
+          rgba(255, 225, 0, 0.7) 4%,
+          rgba(255, 225, 0, 0.3)
         );
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
-}
+      }
+      .pain-points-container {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        margin: 32px 0;
+        align-items: stretch;
+        width: 100%;
+        max-width: 700px;
+      }
+      .pain-point-box {
+        background: #ffb366;
+        color: #410b48;
+        border-radius: 12px;
+        padding: 18px 22px;
+        min-height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0 2px 10px rgba(64,11,72,0.06);
+        font-size: 1rem;
+        font-family: "IBM Plex Mono", monospace;
+      }
+      .pain-point-box strong {
+        font-size: 1.1rem;
+        color: #c24c2f;
+        margin-bottom: 6px;
+      }
+      .feedback-section {
+        background: #fff8e1;
+        border-radius: 12px;
+        padding: 32px 40px;
+        margin-bottom: 32px;
+        box-shadow: 0 4px 16px rgba(255,179,102,0.10);
+        max-width: 900px;
+      }
+      .feedback-title {
+        font-family: "IBM Plex Mono", monospace;
+        letter-spacing: 0.5px;
+      }
+      .feedback-quote {
+        font-style: italic;
+        color: #410b48;
+        background: #fff;
+        border-left: 6px solid #ffb366;
+        margin: 16px 0;
+        padding: 16px 24px;
+        border-radius: 8px;
+        font-size: 1.1rem;
+      }
+      .scroll-animate {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.7s ease, transform 0.7s cubic-bezier(.2,1,.22,1);
+      }
+      .scroll-animate.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="scroll-progress-bar" style="position: fixed; top: 0; left: 0; width: 0; height: 6px; background: #c24c2f; z-index: 9999; transition: width 0.2s;"></div>
+    <header>
+      <nav class="navbar navbar-inverse nav-padding">
+        <div class="container-fluid text-center">
+          <div class="navbar-header">
+            <i class="fa-solid fa-star star-icon"></i>
+            <a class="navbar-title" href="index.html">ARLI MOYAO-RAMIREZ</a>
+          </div>
+          <div class="navbar-header">
+            <a class="textmarker-effect navbar-brand" style="font:sans-serif; font-weight: 400; padding-left: 75px;" href="index.html">Work</a>
+            <a class="navbar-brand textmarker-effect" style="font:sans-serif; font-weight: 400; padding-left: 75px;" href="about.html">About</a>
+            <a class="navbar-brand textmarker-effect" style="font:sans-serif; font-weight: 400; padding-left: 75px;" href="#contact">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section style="background-color: #ffffffef; padding: 20px;">
+      <div style="padding-left:200px; padding-top: 200px;">
+        <div class="col-sm-8 text-left">
+          <h1 class="section-title-card-highlight scroll-animate">
+            WELLESLEY SUSTAINIBILITY PROPOSAL
+            <img src="data:image/png;base64,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">
+          </h1>
+          <p class="scroll-animate" style="font-size: 20px; font-weight: 700;">This application solution offers students an alternative to current Wellesley Facebook group for students to buy, sell, and donate items within the Wellesley community.</p>
+          <div class="scroll-animate" style="display: flex; align-items: center; justify-content: flex-start; gap: 24px; margin-bottom: 32px;">
+            <img src="cs220-intro.png" alt="CS220 Intro" style="max-width: 220px; height: auto; border-radius: 12px;">
+            <img src="arrow.png" alt="Arrow" style="max-width: 60px; height: 60px;">
+            <img src="cs220-webflow.png" alt="CS220 Webflow" style="max-width: 220px; height: auto; border-radius: 12px;">
+          </div>
 
-    .topic{
-        font-weight: 200;
-        font: sans; 
-    }
-</style>
-
-<body> 
-
-  <header> 
-    <nav class="navbar navbar-inverse nav-padding">
-              <div class="container-fluid text-center">
-                <div class="navbar-header">
-                  <i class="fa-solid fa-star star-icon"></i>
-
-                  <a class="navbar-brand" style="font:sans-serif; font-weight: 300; padding-left: 75px; font-size: xx-large;" href="#"> ARLI MOYAO-RAMIREZ </a>
-                </div>
-
-                <div class="navbar-header">
-                  <a class="textmarker-effect navbar-brand " style="font:sans-serif; font-weight: 400; padding-left: 75px;" href="index.html">Work</a>
-                  <a class="navbar-brand textmarker-effect" style="font:sans-serif; font-weight: 400; padding-left: 75px;" href="about.html">About</a>
-                  <!-- <a class="navbar-brand textmarker-effect" style="font:sans-serif; font-weight: 400; padding-left: 75px;" href="#">Contact</a> -->
-          
-
-              </div>   
-              </div>
-            </nav>
-
-</header>
-    <body> 
-    
-    <section> 
-        <div style="padding-left:200px; padding-top: 200px;">
-            
-    
-            <div class="col-sm-8 text-left themeFont"> 
-                <h1 class="themeFont mark-style1" style="font-weight: 200;">Sustaibility Application Proposal
-
-                  <img src="data:image/png;base64,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">
-                </h1>
-                <p>Throughout my Human-Computer Interaction course, I learned the importance of good and accessible design. Using the skills learn in this course, my final group project 
-                    that consisted of three other designers, created a Sustainabilty application. Together we design, implemented, and received feedback on the interactive 
-                    application built. To go along with this project, we created a website that can be accessed  <link rel="stylesheet" href=""> here </p>
-                <hr>
-                <h3 class="themeFont">Our Design Process</h3>
-                <p class="themeFont">We realized that many students at Wellesley would like to lead a more sustainable lifestyle, however face many practical barriers. For example, a more sustainable solution often is too time intensive or potentially more costly.
-                   We also realized many students did not know about the existing Wellesley sustainability resources. 
-                  Through the iterative human centered design process, we created Sage to bridge that gap. Sage's two key functionalities are the following:
-                <ul>
-                
-                    <li>Acting as place where Wellesley community members can buy and sell items in a streamlined process</li>
-                  <li>Acting as a platform for sustainability related events on campus to increase community sustainability interest </li>
-                </ul>
-                
-                </p>
-              </div>
-              <div class="col-sm-8 sidenav">
-                <div class="well">
-                  <h4> Step 1: User Anaylsis</h4>
-                  <p>In this first step, we wanted to gather more information about the potential users for our application,
-                    and gather information on the current environmental habits of the Wellesley community. We conducted interviews and surveys to gather this information. </p>
-                  </p>
-
-                  <p> 
-                    <ul> 
-                      <li>
-                        We created a contexual interview protocol to learn about users feelinigs and experiences in relation to sustainbility on campus including an 
-                        observation section to understand how users naturally use similar applications. Some example questions were, "What is your perception of sustainability on Wellelsey's campus?",  "How frequently do you buy new items: clothes, shoes?, and "Currently, how do you remove items from your room or possession that you no longer want?". 
-                      
-                    </li>
-
-                    <li>We interviewed five users using the interview protocol, paying extra attention to the user's needs and pain points.</li>
-                    <li> We creating two user personas based on the interviews and surveys.</li>
-                    <li> Based on the repeated pain points from our user personas and interview findings, we constructed a problem statement. </li>
-                    <li> Finally, we created a heirarchical task analysis diagram based on a single flow for buying an item with our application. We hoped that a flow designed in this way would minimize some of the aforementioned pain points.</li>
-                  
-                 </ul>
-
-                  </p>
-                </div>
-                <div class="well">
-                  <h4 style="padding-top: 50px;"> Step 2: Ideation</h4>
-
-                  <p> Once we identified the main uses for the application, we created two seperate designs with different functionalities that address our design goals. This step included:</p>
-                  <ul> 
-                    <li> 
-                      Creating two storyboards that represent realisitc user scenarios. Each scenario applied to a different design goal.  The storyboard below representings having a streamlined buying/selling experience to save time while living with sustainable methods (have quick options to see what is new, quickly make a purchase or sell, etc)
-                    </li>
-                 
-
-                  <img src="cs220pics/goal3.png" alt="Goal 3" style="width: 400px; height: 400px;">
-
-                  <li style="padding-top: 100px;"> 
                    
-                     Creating main design directions for each of the two designs.
-                    </li>
+<div class="scroll-animate" style="display: flex; flex-direction: row; gap: 40px; margin: 32px 0;">
+  <div style="flex: 1; min-width: 220px; display: flex; flex-direction: column; gap: 24px;">
+    <div class="themeFont" style="font-size: 1.1rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(255,179,102,0.10); padding: 24px; text-align: center;">
+      <span style="display: block; font-weight: bold; color:#c24c2f; border-bottom: 2px solid #c24c2f; margin-bottom: 6px;">Role</span>
+      <span>UX/UI Designer, Web Developer, Researcher</span>
+    </div>
+    <div class="themeFont" style="font-size: 1.1rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(255,179,102,0.10); padding: 24px; text-align: center;">
+      <span style="display: block; font-weight: bold; color:#c24c2f; border-bottom: 2px solid #c24c2f; margin-bottom: 6px;">Team</span>
+      <span>Solo Project (MIT Media Lab)</span>
+    </div>
+   
+  </div>
+  <div style="flex: 1; min-width: 220px; display: flex; flex-direction: column; gap: 24px;">
+    <div class="themeFont" style="font-size: 1.1rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(255,179,102,0.10); padding: 24px; text-align: center;">
+      <span style="display: block; font-weight: bold; color:#c24c2f; border-bottom: 2px solid #c24c2f; margin-bottom: 6px;">Tools</span>
+      <span>HTML, CSS, JavaScript, Firebase, Figma</span>
+    </div>
+   <div class="themeFont" style="font-size: 1.1rem; border-radius: 12px; box-shadow: 0 2px 10px rgba(255,179,102,0.10); padding: 24px; text-align: center;">
+      <span style="display: block; font-weight: bold; color:#c24c2f; border-bottom: 2px solid #c24c2f; margin-bottom: 6px;">Timeline</span>
+      <span>Summer 2023</span>
+    </div>
+  </div>
+</div>
+          <hr class="scroll-animate">
+          <h3 class="sub-title scroll-animate">THE PROBLEM AND THE OPPORTUNITY</h3>
+          <p class="blurb-labels scroll-animate">How can I create sustainability more accessible and efficient to implement at Wellesley College?</p>
+          <p class="scroll-animate" style="font-weight:400px; font-size: 20px">
+            Sustainability at Wellesley College is difficult to implement due to the inaccessibility and inefficiency of current second-hand platforms like Wellesley Free and For Sale. Students interested in sustainable living lack access to user-friendly, well-organized tools for buying and selling second-hand items, making it challenging to engage in eco-friendly practices on campus.
+          </p>
+          <p class="scroll-animate" style="font-weight:400px; font-size: 20px">
+            We realized that many students at Wellesley would like to lead a more sustainable lifestyle, however face many practical barriers. For example, a more sustainable solution often is too time intensive or potentially more costly. We also realized many students did not know about the existing Wellesley sustainability resources. Through the iterative human centered design process, we created Sage to bridge that gap. Sage's two key functionalities are the following:
+          </p>
+          <ul class="scroll-animate">
+            <li style="font-weight:400px; font-size: 20px">Acting as place where Wellesley community members can buy and sell items in a streamlined process</li>
+            <li style="font-weight:400px; font-size: 20px">Acting as a platform for sustainability related events on campus to increase community sustainability interest</li>
+          </ul>
+          <div class="scroll-animate" style="display: flex; align-items: center; justify-content: space-between; gap: 32px; margin: 32px 0;">
+            <div class="section-title-card-highlight" style="flex: 1; font-size: 22px; color: #410b48; font-weight: 500;">
+              <span>Main source to buy or sell items on campus</span>
+            </div>
+            <div style="flex: 1; display: flex; justify-content: flex-end;">
+              <img src="facebookgroup.jpg" alt="Facebook Group" style="max-width: 300px; height: 400px; border-radius: 12px; object-fit: cover;">
+            </div>
+          </div>
 
-               
-        
-                    <li> Sharing our designs with the class and recieving feedback on the designs.</li>
+
+         <div style="display: flex; gap: 48px; align-items: flex-start; margin-top: 32px;">
+    <p class="sub-title scroll-animate section-title-card-highlight" style="flex: 1; font-size: 22px; color: #410b48; font-weight: 500;"">Main pain points discussed</p>
+    <div class="pain-points-container scroll-animate">
+      <div class="pain-point-box">
+        <strong>Poor User Experience on Facebook</strong>
+        <p>Users strongly dislike the Facebook interface, describing it as frustrating and unpleasant, which discourages them from using the Wellesley Free and For Sale group.</p>
+      </div>
+      <div class="pain-point-box">
+        <strong>Fragmented Buying/Selling Timelines</strong>
+        <p>There is no consistent pattern for when students prefer to buy or sell items—some do so at the beginning, others at the end of the semester, or during breaks—making it hard to match buyers and sellers.</p>
+      </div>
+      <div class="pain-point-box">
+        <strong>Preference for Convenience</strong>
+        <p>Despite the availability of local options, most students still find Amazon the most convenient for shopping, likely due to ease of use, reliability, and consistent availability.</p>
+      </div>
+    </div>
+  </div>
+          <ul class="scroll-animate">
+            <li>We created two user personas based on the interviews and surveys.</li>
+            <li>Finally, we created a hierarchical task analysis diagram based on a single flow for buying an item with our application. We hoped that a flow designed in this way would minimize some of the aforementioned pain points.</li>
+          </ul>
+          <div class="scroll-animate" style="display: flex; justify-content: center; margin: 32px 0;">
+            <img src="hierarchical-task-analysis-removebg-preview.png" alt="Hierarchical Task Analysis Diagram" style="border: 6px solid #ffb366; border-radius: 16px; padding: 12px; max-width: 800px; width: 100%; height: auto; box-shadow: 0 4px 16px rgba(255,179,102,0.10);">
+          </div>
+          <div class="well scroll-animate">
+            <h4 class="sub-title" style="padding-top: 50px;">IDEATION</h4>
+            <p class="blurb-labels">Creating initial design goals and feedback</p>
+            <b>1. Identifying the Design Goals</b>
+            <p>Our vision for the application is guided by three core design adventures:</p>
+            <ul style="font-size: 20px; font-weight: 400;">
+              <li><span ><b> Effortless Discovery:</b></span> Seamlessly search and explore a well-organized marketplace to find exactly what you need, when you need it.</li>
+              <li><span ><b>Community Connections:</b></span> Dive into campus events and sustainability sales—your go-to hub for buying, selling, and learning together.</li>
+              <li><span ><b>Streamlined Experience:</b> </span> Enjoy a fast, intuitive process for listing, browsing, and exchanging items—making sustainable living simple and time-saving.</li>
+            </ul>
+            <b>2. Creating Storyboards</b>
+            <div class="scroll-animate" style="display: flex; justify-content: center; margin: 32px 0;">
+              <img src="cs220pics/goal3.png" alt="Goal 3" style="width: 600px; height: 600px;">
+            </div>
+            <b>3. Design Directions</b>
+            <div class="scroll-animate" style="display: flex; gap: 32px; justify-content: center; margin: 48px 0;">
+              <div style="flex: 1; max-width: 520px; background: #fff; border: 4px solid #ffb366; border-radius: 16px; padding: 18px; box-shadow: 0 4px 16px rgba(255,179,102,0.10); display: flex; flex-direction: column; align-items: center;">
+                <img src="cs220pics/design2.png" alt="Goal 1" style="width: 500px; height: auto; border-radius: 12px;">
+                <p style="margin-top: 18px;">In this design, the user navigates to the home section of the app where they have the option of scrolling through, or directly searching for the item of interest. They search their item instead, and are shown items near them, as well as other items that can require travel. They can also filter through the results, but clicks on the first result, and decides to buy it.</p>
+              </div>
+              <div style="flex: 1; max-width: 520px; background: #fff; border: 4px solid #ffb366; border-radius: 16px; padding: 18px; box-shadow: 0 4px 16px rgba(255,179,102,0.10); display: flex; flex-direction: column; align-items: center;">
+                <img src="cs220pics/design3.png" alt="Goal 2" style="width: 500px; height: auto; border-radius: 12px;">
+                <p style="margin-top: 18px;">In this design, the user navigates through the home section, and can demonstrate interest in events where they can buy items. They can click on the events tab located on the sidebar, and have the option of searching through events or clicking on the more recent events. They click over the first event, and are interested in attending. The events page showcases the organizer, location, and description. Once they indicate their interest, they are able to add it to their calendar.</p>
+              </div>
+            </div>
+            <b>4. Peer Feedback</b>
+            <p>After sharing our design ideas with classmates, we found that each design had distinct strengths and weaknesses. Design 1 prioritized efficiency and a familiar shopping experience but lacked community engagement and sustainability focus, while Design 2 emphasized community and sustainability but included more complex functionality that could affect user clarity.</p>
+            <div class="feedback-section">
+              <div class="feedback-title">Design Impressions</div>
+              <blockquote class="feedback-quote">“I love the 'buy now' option, love the incorporation of event and community interaction and I just love the social approach!”</blockquote>
+              <blockquote class="feedback-quote">“Users can find out about and keep track of sustainability events on campus. It is straightforward to list/sell items on the app. Users can efficiently find the product they want. Users can easily see key information about an item (price, location, etc.) when they are browsing (they don't have to click into an item).”</blockquote>
+              <blockquote class="feedback-quote">“I like that the user can find out about sustainability events around campus. I like that students can make money on this application. I like that there is a 'near you' category in Design 1.”</blockquote>
+              <div class="feedback-title" style="margin: 32px 0 12px 0;">Suggestions</div>
+              <blockquote class="feedback-quote">“I'm confused about if the seller has to confirm the user's request to purchase, and how to upload an item [to sell] should be prototyped next.”</blockquote>
+              <blockquote class="feedback-quote">“I'd also suggest being careful with the 'buy now' feature because it implies it is bought instantly and this can be an issue since the seller isn't ready to give them the product immediately. I'd probably suggest relabeling it.”</blockquote>
+              <blockquote class="feedback-quote">“The most important part should be to make the browsing and searching process for items as simple as possible while also providing key information about items. Make sure not to overload the user with too much information, but also include enough info so that they can easily find things.”</blockquote>
+            </div>
+          </div>
+          <div class="well scroll-animate">
+            <h4 class="sub-title" style="padding-top: 50px;">ITERATION DESIGN</h4>
+            <p class="blurb-labels">Identifying Features through Iterations and Prototypes</p>
+            <p>We created a wireframe prototype utilizing Figma that contained all the main features of our application, such as accessing events, or buying an item. In this step, we also conducted four user tests after our initial wireframe prototype, where one of the features "Event Host Controls" according to some of our user tests was difficult to find due to the small font size, and inconvenient location in our app. This was only challenge many of the users felt needed fixing, but otherwise other aspects of the wireframe design was easy to navigate through.</p>
+            <img src="cs220pics/lowfi.png" alt="Goal 2" style="width: 600px; height: 400px;">
+          </div>
+          <div class="well scroll-animate">
+            <h4 style="padding-top: 50px;">Step 4: High Fidelity Prototype</h4>
+            <p>In this next part of our prototype design, we focused on the usability and graphic design of our implementation. First, we added some new pages to increase the number of features of our app. Specifically, we built a “Create a New Event” page as well as improved the usability of our “Profile” page by allowing users to see their listings, likes, and sold items. We also recharted some of the flows in our wireframe prototype to ensure smooth and easy navigation. To improve our graphic design, we added colors, fonts, and a custom-designed logo to our app layout.</p>
+            <img src="cs220pics/highfi.png" alt="Goal 2" style="width: 600px; height: 400px;">
+          </div>
+          <div class="well scroll-animate">
+            <h4 style="padding-top: 50px;">Step 5: Final Prototype</h4>
+            <p>Our final prototype was created after going through the iterative design process several times, keeping in mind human centered design principles.</p>
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/kG2FF5uuCRN7CnEjqiq4Jn/CS220?node-id=213-250&node-type=frame&scaling=scale-down&content-scaling=fixed&page-id=213%3A247&starting-point-node-id=213%3A826&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>
+          </div>
+          <div class="well scroll-animate">
+            <h4 class="sub-title" style="padding-top: 50px;">TAKEAWAYS</h4>
+            <p class="blurb-labels">FINAL FEEDBACK, IMPROVEMENTS, LEARNINGS</p>
+            <div class="container" style="margin-top: 40px;">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="well" style="background: #fff8e1; border-radius: 12px; box-shadow: 0 2px 10px rgba(255,179,102,0.10); padding: 24px;">
+                    <h5 class="themeFont" style="color: #c24c2f;">Usability Metrics</h5>
+                    <table class="table table-bordered" style="background: #fff;">
+                      <thead>
+                        <tr>
+                          <th>Task</th>
+                          <th>Time (s)</th>
+                          <th>Satisfaction</th>
+                          <th>Errors</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>126.5</td>
+                          <td>8.1 / 10</td>
+                          <td>0.5</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>19.5</td>
+                          <td>9.14 / 10</td>
+                          <td>0.25</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>44.5</td>
+                          <td>7.04 / 10</td>
+                          <td>1.5</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <ul style="font-size: 1rem; margin-top: 12px;">
+                      <li><span class="mark-style1">Speed:</span> Ensured flows are quick and efficient for retail use.</li>
+                      <li><span class="mark-style1">Satisfaction:</span> Reflected overall user experience (noting possible bias).</li>
+                      <li><span class="mark-style1">Errors:</span> Quantified user success and pain points.</li>
                     </ul>
-                
-                
-                  <img src="cs220pics/design2.png" alt="Goal 1" style="width: 600px; height: 400px;">
-
-                  <img src="cs220pics/design3.png" alt="Goal 2" style="width: 600px; height: 400px;">
-
-                  
+                  </div>
                 </div>
-              
-              
-                <div class="well">
-                  <h4 style="padding-top: 50px;"> Step 3: Wireframe Prototype</h4>
-
-                  <p>We created a wireframe prototype utilizing Figma that contained all the main features of our application, such as accessing events, or buying an item. In this step, we also conducted
-                    four user tests after our initial wireframe prototype, where one of the features "Event Host Controls" according to some of our user tests was difficult to 
-                  find due to the small font size, and inconvinient location in our app. This was only challenge many of the users felt needed fixing, but otherwise other aspects
-                of the wireframe design was easy to navigate through. </p>
-        
-                <img src="cs220pics/lowfi.png" alt="Goal 2" style="width: 600px; height: 400px;">
-
-                  
+                <div class="col-md-6 mb-4">
+                  <div class="well" style="background: #fff8e1; border-radius: 12px; box-shadow: 0 2px 10px rgba(255,179,102,0.10); padding: 24px;">
+                    <h5 class="themeFont" style="color: #c24c2f;">Key Findings</h5>
+                    <ul style="font-size: 1rem;">
+                      <li><b>Event Host Controls</b> remain hard to find, causing most errors and lowest satisfaction.</li>
+                      <li><b>Event Registration</b> is fast, easy, and highly rated by users.</li>
+                      <li>App aesthetics and G-Cal integration were praised for intuitiveness and uniqueness.</li>
+                    </ul>
+                    <h5 class="themeFont" style="color: #c24c2f; margin-top: 18px;">Improvements</h5>
+                    <ul style="font-size: 1rem;">
+                      <li>Moved and emphasized the 'Event Host Controls' button for better visibility.</li>
+                      <li>Plan to add an FAQ page for common confusions.</li>
+                      <li>Will introduce a monthly calendar icon for event tracking on user profiles.</li>
+                    </ul>
+                  </div>
                 </div>
-
-
-                <div class="well">
-                  <h4 style="padding-top: 50px;"> Step 4: High Fidelity Prototype</h4>
-
-                  <p>In this next part of our prototype design, we focused on the useability and graphic design of our implementation. First, we added some new pages to increase the number of features of our app. Specifically, we built a “Create a New Event” page as well as improved the usability of our “Profile” page by allowing users to see their listings, likes, and sold items. We also recharted some of the flows in our wireframe prototype to ensure smooth and easy navigation. To improve our graphic design, we added colors, fonts, and a custom-designed logo to our app layout. </p>
-                  <img src="cs220pics/highfi.png" alt="Goal 2" style="width: 600px; height: 400px;">
-
-                  
-                </div>
-
-                <div class="well"></div>
-                  <h4 style="padding-top: 50px;"> Step 5: Final Prototype</h4>
-
-                  <p>Our final prototype was created after going through the iterative design process several times, keeping in mind human centered design principles.
-
-                  </p>
-        
-                  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/kG2FF5uuCRN7CnEjqiq4Jn/CS220?node-id=213-250&node-type=frame&scaling=scale-down&content-scaling=fixed&page-id=213%3A247&starting-point-node-id=213%3A826&show-proto-sidebar=1&embed-host=share" allowfullscreen></iframe>                  
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="well" style="background: #fff; border-left: 6px solid #410b48; border-radius: 10px; padding: 24px; margin-top: 12px;">
+                    <h5 style="color:#410b48">Final Takeaway</h5>
+                    <p style="font-size: 1.1rem;">
+                      We achieved our goal: designing a prototype that helps users live more sustainably on campus and fosters community through peer events. Future improvements will focus on clarity, user support, and enhanced event features.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          
-          <footer class="container-fluid text-center">
-            
-          </footer>
-          
-          </body>
-    
-    </section>
+          <!-- End main content -->
         </div>
-    </body>
+      </div>
+    </section>
+    <footer class="footer-cards" style="color: #410b48; padding: 20px; text-align: center;">
+      <div>
+        <h2 style="font-size:45px; font-family: sans-serif; font-weight: 300; color: #c24c2f;">
+          Be <span style="color: #ffe100;"><strong> Bold.</strong></span>
+        </h2>
+        <p class="ibm-plex-mono-light" style="color: #c24c2f;">
+          Designed and coded with 
+          <img src="https://img.icons8.com/material-rounded/24/like--v1.png" alt="like--v1"/>
+        </p>
+        <div class="ibm-plex-mono-light" style="font-size: smaller;">
+          <span>am118@wellesley.edu </span>
+          <a href="https://www.linkedin.com/in/arli-moyao-ramirez-171394174/">
+            <img style="color:#c24c2f" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/linkedin.png" alt="linkedin"/>
+          </a>
+          <a href="https://github.com/ArliMoyao">
+            <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github"/>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Progress bar and header shadow
+      window.addEventListener('scroll', function() {
+        const scrollBar = document.getElementById('scroll-progress-bar');
+        const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        scrollBar.style.width = scrolled + "%";
+        // Header shadow
+        const header = document.querySelector('header');
+        if (window.scrollY > 10) {
+          header.style.boxShadow = "0 4px 16px rgba(64,11,72,0.10)";
+        } else {
+          header.style.boxShadow = "none";
+        }
+      });
+      // Scroll animation for text
+      document.addEventListener("DOMContentLoaded", function() {
+        const animatedEls = document.querySelectorAll('.scroll-animate');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        }, { threshold: 0.15 });
+        animatedEls.forEach(el => observer.observe(el));
+      });
+    </script>
+  </body>
+</html>

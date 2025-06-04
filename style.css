@@ -4,12 +4,67 @@
   }
 
 
+/* Navbar brand (site title) styling */
+.navbar .navbar-brand {
+  color: #ffffffd1 !important;         /* Make the name white */
+  font-size: 6rem;   /* Increase the font size */
+  letter-spacing: 1px;
+}
+
+
+
+/* Navbar height and padding */
+.navbar {
+  min-height: 50px;               /* Increase navbar height */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-title {
+
+  letter-spacing: 1px;
+  font-size:40px;
+  color: #ffffffd4 !important;  
+  text-decoration: none !important;
+
+}
+/* Reduce space between nav links */
+.navbar .navbar-header .navbar-brand,
+.navbar .navbar-header .textmarker-effect {
+  margin-right: 24px;             /* Reduce space between links */
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  font-size: 1.3rem !important;   /* Optionally increase link size */
+}
+
+.navbar .navbar-header .navbar-brand:last-child,
+.navbar .navbar-header .textmarker-effect:last-child {
+  margin-right: 0;
+}
+
+
+
+
   body { 
     font: sans-serif; 
-    padding-left: 75px;
-    background-color: #ad8a82;
-    padding: 50px 50px 0 50px;
+    background-color: #410b48;
+    /* padding: 50px 50px 0 50px; */
 }
+
+
+/* Main content container with white background and centered */
+.body-cards {
+  background: #ffffffdd;
+  max-width: 1200px; /* or your preferred width */
+  margin: 0 auto;
+  padding: 40px 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06); /* optional, for subtle elevation */
+}
+
+
 .textmarker-effect {
   position: relative;
   display: inline-block;
@@ -48,6 +103,46 @@
   box-decoration-break: clone;
 }
 
+.section-title-highlight {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 8px;
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #ffffffd4;
+}
+
+.section-title-highlight::after {
+  content: "";
+  display: block;
+  width: 80px;           /* Adjust width for highlight length */
+  height: 5px;           /* Thickness of the underline */
+  background: #ffe100b3; /* Highlight color */
+  border-radius: 3px;
+  margin-top: 6px;
+}
+
+
+.section-title-card-highlight {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 8px;
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #410b48;
+}
+
+.section-title-card-highlight::after {
+  content: "";
+  display: block;
+  width: 80px;           /* Adjust width for highlight length */
+  height: 5px;           /* Thickness of the underline */
+  background: #ffe100b3; /* Highlight color */
+  border-radius: 3px;
+  margin-top: 6px;
+}
 .mark-style2 {
   margin: 0 -0.4em;
   padding: 0.1em 0.4em;
@@ -63,18 +158,111 @@
   box-decoration-break: clone;
 }
 
+/* PROJECT styles */
+
+.sub-title{ 
+  font: monospace;
+  font-size: 1.5rem;
+  font-weight: 500; 
+  color:#410b48
+}
+
+.blurb-labels{ 
+  font: sans-serif;;
+  font-size: 2rem;
+  font-weight: 700;
+  color:#c24c2f;
+}
+
+
 .card {
-    width: 30rem; /* Set the desired width */
-    height: 40rem; /* Set the desired height */
-    margin: 10px;
-    padding: 20px;
-    box-sizing: border-box;
-    border: 8px solid #A37B73;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #A37B73;
+  width: 40rem;             
+  height: 40rem;
+  margin: 0 8px 24px 8px;    /* Less horizontal space, more bottom space */
+  padding: 20px;
+  box-sizing: border-box;
+  border: 8px solid #c24c2f;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+}
+.pain-points-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 32px 0;
+  align-items: stretch;
+  width: 100%;
+  max-width: 700px;
+}
+
+.pain-point-box {
+  background: #ffb366;
+  color: #410b48;
+  border-radius: 12px;
+  padding: 18px 22px;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(64,11,72,0.06);
+  font-size: 1rem;
+  font-family: "IBM Plex Mono", monospace;
+}
+.feedback-section {
+  background: #fff8e1;
+  border-radius: 12px;
+  padding: 32px 40px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 16px rgba(255,179,102,0.10);
+  max-width: 900px;
+}
+
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s ease, transform 0.7s cubic-bezier(.2,1,.22,1);
+}
+
+.scroll-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.feedback-title {
+  font-family: "IBM Plex Mono", monospace;
+  letter-spacing: 0.5px;
+}
+
+.feedback-quote {
+  font-style: italic;
+  color: #410b48;
+  background: #fff;
+  border-left: 6px solid #ffb366;
+  margin: 16px 0;
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+.pain-point-box strong {
+  font-size: 1.1rem;
+  color: #c24c2f;
+  margin-bottom: 6px;
+}
+
+
+/* Remove extra gutter between columns if using Bootstrap grid */
+.row.card-row {
+  margin-left: 0;
+  margin-right: 0;
+  gap: 0; /* Remove Bootstrap's default gutter if needed */
+}
+
+/* Card container spacing: add margin-top to separate from section above */
+.card-list-section {
+  margin-top: 60px; /* Adjust as needed for spacing above cards */
 }
 
 .card img {
@@ -116,11 +304,44 @@
     font-weight: 300;
     font-style: normal;
   }
-  .footer {
-    padding: 10x 0;
-    text-align: center;
-    width: 100%;
-    margin-top: auto;
+ 
+  /* Make footer full width and colored */
+.footer {
+  width: 100vw;
+  height: 300px; /* Set the footer height to 200px */
+  left: 0;
+  background-color: white;
+  color: rgb(0, 0, 0) !important;
+  padding: 0; 
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+
+}
+
+.footer-cards{ 
+  background-color:#410b48;
+   width: 100vw;
+  height: 300px; /* Set the footer height to 200px */
+  left: 0;
+  color: rgb(255, 252, 252) !important;
+  padding: 0; 
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+
+
+
+}
+/* Add padding above footer only for index and about pages */
+.with-footer-padding {
+  padding-top: 60px; 
 }
 
 .footer .container-fluid {
@@ -162,7 +383,9 @@
 
 .scroll-container {
   /* width: 100vw; /* Ensure the container spans the entire width of the viewport */
+  margin-top: 400px;
   white-space: nowrap; /* Prevents text from wrapping */
+  color: #ffffffb9;
   overflow-x: auto; /* Enables horizontal scrolling */
   font-size: 60px; /* Adjust font size as needed */
    /* padding: 10px 0; /* Adjust padding as needed */
@@ -184,6 +407,17 @@
   color: #c24c2f;
 
 }
+.intro-img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border: 6px solid #c24c2f;
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box; /* Ensures border is included in the image size */
+}
 
 .material-symbols-outlined-star {
   font-variation-settings:
@@ -194,7 +428,7 @@
 }
 
 .star-icon {
-  font-size: 60px;
+  font-size: 80px;
   color: gold;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
@@ -218,6 +452,7 @@
 @media (max-width: 768px) {
   .text-center h2 {
     font-size: 30px;
+    
   }
 
   .footer .container-fluid {
