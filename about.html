@@ -13,6 +13,25 @@
     <script src="https://kit.fontawesome.com/655e2492ad.js" crossorigin="anonymous"></script>
     <link rel="icon" href="favicon.png" type="favicon.png">
   </head>
+  <style>
+.affiliation-img {
+    max-width: 150px;
+    max-height: 150px;
+    transition: transform 0.3s cubic-bezier(.2,1,.22,1), box-shadow 0.3s, filter 0.3s;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(255,225,0,0.10);
+    background: #fff;
+    padding: 10px;
+    filter: grayscale(0%);
+  }
+  .affiliation-link:hover .affiliation-img,
+  .affiliation-link:focus .affiliation-img {
+    transform: scale(1.15) rotate(-3deg);
+    box-shadow: 0 4px 32px #ffe100b3, 0 0 0 4px #c24c2f;
+    background: #ffe100;
+    filter: grayscale(0%) brightness(1.1);
+  }
+  </style> 
   <body class="with-footer-padding" style="background-color: #410b48;">
     <div id="scroll-progress-bar" style="position: fixed; top: 0; left: 0; width: 0; height: 6px; background: #c24c2f; z-index: 9999; transition: width 0.2s;"></div>
     <header>
@@ -39,14 +58,14 @@
                 About Me
               </span>
               <h2 class="blurb-labels" style="font-size: 2.2rem; color: #ffe100; padding-top: 20px;">Hi, I'm Arli!</h2>
-              <p class="ibm-plex-mono-light subheading" style="font-size: 1.3rem; color: #fff; padding-top: 10px;">
-                I'm a Computer Science student at Wellesley College in Boston, MA. I love exploring the intersection of technology, ethics, and human impact. My interests include AI/ML, data, and how we make decisions as individuals.
+              <p class="subheading" style="font-size: 1.3rem; color: #fff; padding-top: 10px;">
+                I received my B.A in Computer Science and minor in Ecomonomics from Wellesley College.<span  style="color:#c24c2f ;font-weight:700"> I leverage insights from my intersectional educational and professional background to implement equitable solutions for products and technology</span>.
               </p>
-              <p class="ibm-plex-mono-light subheading" style="font-size: 1.15rem; color: #fff;">
+              <p class="subheading" style="font-size: 1.3rem; color: #fff;">
                 My programming journey began with Python in my freshman year. Despite the challenge, I was determined to gain the skills to turn my ideas into real products. I'm originally from the Bronx, NY, and as a first-generation college student, I hope to use technology to increase accessibility to education and opportunities for students from similar backgrounds.
               </p>
-              <p class="ibm-plex-mono-light subheading" style="font-size: 1.15rem; color: #fff;">
-                In my free time, I enjoy learning new languages, trying new foods, and traveling! I've visited South Korea, Senegal, Japan, and Mexico.
+              <p class="subheading" style="font-size: 1.3rem; color: #fff;">
+                In my free time, I enjoy learning new languages, trying new foods, and traveling! I've also visited Senegal, Japan, and Mexico.
               </p>
             </div>
          </div>
@@ -84,18 +103,19 @@
     <div class="row" style="margin-top: 32px;">
       <div class="col-md-4 text-center">
         <div style="border-radius: 16px; padding: 32px 18px; min-height: 220px;">
-          <h4 style="color: #ffe100; font-weight: 700; font-size: 2rem;">Software Development</h4>
+          <h4 style="color: #ffe100; font-weight: 700; font-size: 2rem;">DEVELOPMENT</h4>
           <ul style="list-style: none; padding: 0; color: #fff; font-size: 1.35rem;">
             <li>Python, Java, JavaScript, TypeScript</li>
             <li>React, Node.js, Express.js</li>
             <li>HTML, CSS, Bootstrap</li>
             <li>Firebase, MongoDB</li>
+            
           </ul>
         </div>
       </div>
       <div class="col-md-4 text-center">
         <div style="border-radius: 16px; padding: 32px 18px; min-height: 220px;">
-          <h4 style="color: #ffe100; font-weight: 700; font-size: 2rem;">UI/UX & Design</h4>
+          <h4 style="color: #ffe100;font-weight: 700; font-size: 2rem;">DESIGN</h4>
           <ul style="list-style: none; padding: 0; color: #fff; font-size: 1.35rem;">
             <li>Figma, Wireframing</li>
             <li>User Research & Testing</li>
@@ -106,17 +126,53 @@
       </div>
       <div class="col-md-4 text-center">
         <div style="border-radius: 16px; padding: 32px 18px; min-height: 220px;">
-          <h4 style="color: #ffe100; font-weight: 700; font-size: 2rem;">Collaboration</h4>
+          <h4 style="color: #ffe100; font: ibm-plex-mono-light; font-weight: 700; font-size: 2rem;">COLLABORATION</h4>
           <ul style="list-style: none; padding: 0; color: #fff; font-size: 1.35rem;">
             <li>Agile & Scrum</li>
             <li>Team Leadership</li>
             <li>Cross-functional Communication</li>
             <li>Project Management</li>
+  
           </ul>
         </div>
       </div>
     </div>
   </div>
+
+  <section style="background-color: transparent; padding: 0 0 40px 0;">
+  <div class="container">
+    <span class="section-title-highlight" style="display: block; font-size: 40px; font-family: sans-serif; font-weight: 600; padding-bottom: 10px; color: #ffe100; margin-top: 40px;">
+      Affiliations
+    </span>
+    <div class="row justify-content-center align-items-center" style="margin-top: 32px; gap: 24px;">
+      <div class="col-6 col-md-2 text-center mb-4">
+        <a href="https://www.sigmaxi.org/" target="_blank" class="affiliation-link">
+          <img src="sigma-xi.png" alt="Sigma Xi" class="affiliation-img">
+        </a>
+      </div>
+      <div class="col-6 col-md-2 text-center mb-4">
+        <a href="https://www.oliverscholars.org/" target="_blank" class="affiliation-link">
+          <img src="oliver-scholars.png" alt="Oliver Scholars" class="affiliation-img">
+        </a>
+      </div>
+      <div class="col-6 col-md-2 text-center mb-4">
+        <a href="" target="https://hluce.org/programs/clare-boothe-luce/" class="affiliation-link">
+          <img src="clare-boothe.png" alt="Clare Boothe Luce" class="affiliation-img">
+        </a>
+      </div>
+      <div class="col-6 col-md-2 text-center mb-4">
+        <a href="https://www.colorstack.org/" target="_blank" class="affiliation-link">
+          <img src="colorstack.png" alt="ColorStack" class="affiliation-img">
+        </a>
+      </div>
+      <div class="col-6 col-md-2 text-center mb-4">
+        <a href="https://rewritingthecode.org/" target="_blank" class="affiliation-link">
+          <img src="rtc.png" alt="RTC" class="affiliation-img">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 </section>
     <footer class="footer">
       <div>
